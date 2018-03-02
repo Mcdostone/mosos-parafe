@@ -19,7 +19,7 @@ When rodin asks you for the workspace, select your home directory, for example `
 Last step:
  - file
  - new Event-B project
- - the name of the project must be `moso-parafe` **(it's very important)**
+ - the name of the project must be `mosos-parafe` **(it's very important)**
  - Finish
 
 Happy coding!
