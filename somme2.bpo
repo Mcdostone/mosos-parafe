@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="u" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="v" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poPredicate name="w" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm1A"/>
+<org.eventb.core.poPredicate name="x" org.eventb.core.predicate="n≠0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm2A"/>
+<org.eventb.core.poPredicate name="y" org.eventb.core.predicate="v∈1 ‥ n → ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm7A"/>
+<org.eventb.core.poPredicate name="z" org.eventb.core.predicate="u∈ℕ → ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm8A"/>
+<org.eventb.core.poPredicate name="{" org.eventb.core.predicate="u(0)=0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm4A"/>
+<org.eventb.core.poPredicate name="|" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ∧i&gt;0∧i≤n⇒u(i)=u(i − 1)+v(i)" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm5A"/>
+<org.eventb.core.poPredicate name="}" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ∧i&gt;n⇒u(i)=u(n)" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm6A"/>
+<org.eventb.core.poPredicate name="~" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ⇒u(i)≥0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_thm1T"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="i" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="somme" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="t" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poPredicate name="sommf" org.eventb.core.predicate="somme∈ℕ" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.invariant#internal_inv1I"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="inv8/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Invariant" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t)⇒t∈ℤ ⇸ ℤ∧k∈dom(u)∧u∈ℤ ⇸ ℤ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="inv9/THM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Theorem" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme9"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom(u)=ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine9"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine9"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme9"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0∈ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv1I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv1I"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≥0" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv3I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv3I"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0≤n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv4I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv4I"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="{0 ↦ 0}∈0 ‥ n ⇸ ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine3"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom({0 ↦ 0})=0 ‥ 0" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine5"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∉dom({0 ↦ 0})⇒0&lt;n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine8"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom({0 ↦ 0})⊆dom(u)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine7"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme="/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom({0 ↦ 0})⇒{0 ↦ 0}(k)=u(k)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#INITIALISATION\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme9|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTsomme=" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="t'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="somme'" org.eventb.core.type="ℤ"/>
+<org.eventb.core.poIdentifier name="i'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPsomme=" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTIDENTsomme=" org.eventb.core.poStamp="0"/>
+<org.eventb.core.poSequent name="somme2/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∈dom(t)∧t∈ℤ ⇸ ℤ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt2|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt2|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme&gt;"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="somme2/act1/SIM" org.eventb.core.accurate="true" org.eventb.core.poDesc="Action simulation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme&gt;"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t(n)=u(n)" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt2|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt2"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt2|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt2"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#somme2\/act1\/SIM|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTsomme&gt;" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="somme'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPsomme&gt;" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTIDENTsomme&gt;" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∈dom(t)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt2|org.eventb.core.guard#internal_grd1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="pas2/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1∈ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv1I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv1I"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1≥0" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv3I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv3I"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i+1≤n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv4I"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv4I"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD2"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="t{i+1 ↦ t(i)+v(i+1)}∈0 ‥ n ⇸ ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine3"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD3"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom(t{i+1 ↦ t(i)+v(i+1)})=0 ‥ i+1" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine5"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine5"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD4"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n∉dom(t{i+1 ↦ t(i)+v(i+1)})⇒i+1&lt;n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine8"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine8"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD5"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv7/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="dom(t{i+1 ↦ t(i)+v(i+1)})⊆dom(u)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine7"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine7"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv7\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8|org.eventb.core.poPredicate#PRD6"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/inv8/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t{i+1 ↦ t(i)+v(i+1)})⇒(t{i+1 ↦ t(i)+v(i+1)})(k)=u(k)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/inv8\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme9|org.eventb.core.poPredicate#PRD7"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/act1/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of action" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="i∈dom(t)∧t∈ℤ ⇸ ℤ∧i+1∈dom(v)∧v∈ℤ ⇸ ℤ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3|org.eventb.core.action#internal_act1"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/VAR" org.eventb.core.accurate="true" org.eventb.core.poDesc="Variant of event" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n − (i+1)&lt;n − i" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.variant#internal_refinesMachine6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.variant#internal_refinesMachine6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/VAR|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="pas2/NAT" org.eventb.core.accurate="true" org.eventb.core.poDesc="Natural number variant of event" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTALLHYPsomme?"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="n − i∈ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.variant#internal_refinesMachine6"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.variant#internal_refinesMachine6"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poSequent#pas2\/NAT|org.eventb.core.poPredicateSet#SEQHYP"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTsomme?" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poIdentifier name="t'" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.poIdentifier name="i'" org.eventb.core.type="ℤ"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPsomme?" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#EVTIDENTsomme?" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="n∉dom(t)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.event#internal_evt3|org.eventb.core.guard#internal_grd1"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPsomme8" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="i∈ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv1I"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="i≥0" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv3I"/>
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="i≤n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_inv4I"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="t∈0 ‥ n ⇸ ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine3"/>
+<org.eventb.core.poPredicate name="PRD4" org.eventb.core.predicate="dom(t)=0 ‥ i" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine5"/>
+<org.eventb.core.poPredicate name="PRD5" org.eventb.core.predicate="n∉dom(t)⇒i&lt;n" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine8"/>
+<org.eventb.core.poPredicate name="PRD6" org.eventb.core.predicate="dom(t)⊆dom(u)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine7"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="HYPsomme9" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme8" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD7" org.eventb.core.predicate="∀k⦂ℤ·k∈dom(t)⇒t(k)=u(k)" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine4"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/mosos-parafe/somme2.bpo|org.eventb.core.poFile#somme2|org.eventb.core.poPredicateSet#HYPsomme9" org.eventb.core.poStamp="0">
+<org.eventb.core.poPredicate name="PRD8" org.eventb.core.predicate="dom(u)=ℕ" org.eventb.core.source="/mosos-parafe/somme2.bum|org.eventb.core.machineFile#somme2|org.eventb.core.invariant#internal_refinesMachine9"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

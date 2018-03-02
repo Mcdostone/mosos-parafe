@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+<org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/mosos-parafe/somme0.bcc" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.seesContext#internal_seesContext1"/>
+<org.eventb.core.scInternalContext name="somme0">
+<org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm1A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="n≠0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm2A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name=")" org.eventb.core.label="axm3" org.eventb.core.predicate="v∈1 ‥ n → ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm7A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="u∈ℕ → ℕ" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm8A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="+" org.eventb.core.label="axm5" org.eventb.core.predicate="u(0)=0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm4A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="," org.eventb.core.label="axm6" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ∧i&gt;0∧i≤n⇒u(i)=u(i − 1)+v(i)" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm5A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="-" org.eventb.core.label="axm7" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ∧i&gt;n⇒u(i)=u(n)" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_axm6A" org.eventb.core.theorem="false"/>
+<org.eventb.core.scAxiom name="." org.eventb.core.label="thm1" org.eventb.core.predicate="∀i⦂ℤ·i∈ℕ⇒u(i)≥0" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.axiom#internal_thm1T" org.eventb.core.theorem="true"/>
+<org.eventb.core.scConstant name="n" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.constant#internal_cst1" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scConstant name="u" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.constant#internal_cst2" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+<org.eventb.core.scConstant name="v" org.eventb.core.source="/mosos-parafe/somme0.buc|org.eventb.core.contextFile#somme0|org.eventb.core.constant#internal_cst3" org.eventb.core.type="ℙ(ℤ×ℤ)"/>
+</org.eventb.core.scInternalContext>
+<org.eventb.core.scInvariant name="somme1" org.eventb.core.label="inv1" org.eventb.core.predicate="somme∈ℕ" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.invariant#internal_inv1I" org.eventb.core.theorem="false"/>
+<org.eventb.core.scVariable name="somme" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.variable#internal_var1" org.eventb.core.type="ℤ"/>
+<org.eventb.core.scEvent name="somme2" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="somme :∈ ℕ" org.eventb.core.label="act1" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt1|org.eventb.core.action#internal_act1"/>
+</org.eventb.core.scEvent>
+<org.eventb.core.scEvent name="somme3" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="somme1" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt2">
+<org.eventb.core.scAction name="'" org.eventb.core.assignment="somme ≔ u(n)" org.eventb.core.label="act1" org.eventb.core.source="/mosos-parafe/somme1.bum|org.eventb.core.machineFile#somme1|org.eventb.core.event#internal_evt2|org.eventb.core.action#internal_act1"/>
+</org.eventb.core.scEvent>
+</org.eventb.core.scMachineFile>
