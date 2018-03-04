@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poIdentifier name="Endroits" org.eventb.core.type="ℙ(Endroits)"/>
+<org.eventb.core.poIdentifier name="Personnes" org.eventb.core.type="ℙ(Personnes)"/>
+<org.eventb.core.poIdentifier name="SAS" org.eventb.core.type="ℙ(SAS)"/>
+<org.eventb.core.poIdentifier name="F" org.eventb.core.type="ℙ(Personnes×Endroits)"/>
+<org.eventb.core.poIdentifier name="chemin" org.eventb.core.type="ℙ(Endroits×Endroits)"/>
+<org.eventb.core.poIdentifier name="fermé1" org.eventb.core.type="ℙ(Endroits×Endroits)"/>
+<org.eventb.core.poIdentifier name="fermé2" org.eventb.core.type="ℙ(SAS×SAS)"/>
+<org.eventb.core.poIdentifier name="ouvert1" org.eventb.core.type="ℙ(Endroits×SAS)"/>
+<org.eventb.core.poIdentifier name="ouvert2" org.eventb.core.type="ℙ(SAS×Endroits)"/>
+<org.eventb.core.poIdentifier name="paysEntrée" org.eventb.core.type="Endroits"/>
+<org.eventb.core.poIdentifier name="paysSortie" org.eventb.core.type="Endroits"/>
+<org.eventb.core.poIdentifier name="personne1" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="personne2" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="posInit" org.eventb.core.type="ℙ(Personnes×Endroits)"/>
+<org.eventb.core.poPredicate name="paysSortif" org.eventb.core.predicate="paysEntrée∈Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#8"/>
+<org.eventb.core.poPredicate name="paysSortig" org.eventb.core.predicate="paysSortie∈Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#9"/>
+<org.eventb.core.poPredicate name="paysSortih" org.eventb.core.predicate="paysEntrée≠paysSortie" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#;"/>
+<org.eventb.core.poPredicate name="paysSortii" org.eventb.core.predicate="personne1∈Personnes" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#="/>
+<org.eventb.core.poPredicate name="paysSortij" org.eventb.core.predicate="personne2∈Personnes" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#&gt;"/>
+<org.eventb.core.poPredicate name="paysSortik" org.eventb.core.predicate="personne1≠personne2" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#?"/>
+<org.eventb.core.poPredicate name="paysSortil" org.eventb.core.predicate="ouvert1∈Endroits → SAS" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#@"/>
+<org.eventb.core.poPredicate name="paysSortim" org.eventb.core.predicate="fermé1∈Endroits → Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#A"/>
+<org.eventb.core.poPredicate name="paysSortin" org.eventb.core.predicate="ouvert2∈SAS → Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#B"/>
+<org.eventb.core.poPredicate name="paysSortio" org.eventb.core.predicate="fermé2∈SAS → SAS" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#C"/>
+<org.eventb.core.poPredicate name="paysSortip" org.eventb.core.predicate="F⊆Personnes × Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#D"/>
+<org.eventb.core.poPredicate name="paysSortiq" org.eventb.core.predicate="posInit∈Personnes → Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#G"/>
+<org.eventb.core.poPredicate name="paysSortir" org.eventb.core.predicate="posInit⊆F" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#H"/>
+<org.eventb.core.poPredicate name="paysSortis" org.eventb.core.predicate="∀p⦂Personnes·p∈Personnes⇒posInit(p)=paysEntrée" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#I"/>
+<org.eventb.core.poPredicate name="paysSortit" org.eventb.core.predicate="∀pays⦂Endroits·pays∈Endroits⇒pays ↦ pays∉chemin" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#K"/>
+<org.eventb.core.poPredicate name="paysSortiu" org.eventb.core.predicate="chemin⊆Endroits × Endroits" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#M"/>
+<org.eventb.core.poPredicate name="paysSortiv" org.eventb.core.predicate="F⊆F;chemin∼" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#N"/>
+<org.eventb.core.poPredicate name="paysSortiw" org.eventb.core.predicate="chemin=ouvert1;ouvert2" org.eventb.core.source="/mosos-parafe/ParafeContext.buc|org.eventb.core.contextFile#ParafeContext|org.eventb.core.axiom#O"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poIdentifier name="pos" org.eventb.core.type="ℙ(Personnes×Endroits)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poSequent name="INITIALISATION/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexw">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="pos'∈Personnes → Endroits∧pos'⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos'⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poSequent#INITIALISATION\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  establishment" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexw">
+<org.eventb.core.poPredicate name="'" org.eventb.core.predicate="pos'∈Personnes → Endroits∧pos'⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos'∈Personnes → Endroits" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poSequent#INITIALISATION\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="INITIALISATION/act1/FIS" org.eventb.core.accurate="true" org.eventb.core.poDesc="Feasibility of action" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexw"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="∃pos'⦂ℙ(Personnes×Endroits)·pos'∈Personnes → Endroits∧pos'⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#'|org.eventb.core.action#'"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexw"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTParafeContexw" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poIdentifier name="pos'" org.eventb.core.type="ℙ(Personnes×Endroits)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPParafeContexw" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTIDENTParafeContexw" org.eventb.core.poStamp="10"/>
+<org.eventb.core.poSequent name="obs1/grd3/WD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Well-definedness of Guard" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTHYPParafeContexx("/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="personne∈dom(pos)∧pos∈Personnes ⇸ Endroits" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#,"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#,"/>
+<org.eventb.core.poSelHint name="SEQHYS" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTHYPParafeContexx("/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="obs1/inv1/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexx"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos{personne ↦ pays}⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poSequent#obs1\/inv1\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD0"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poSequent name="obs1/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTALLHYPParafeContexx"/>
+<org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="pos{personne ↦ pays}∈Personnes → Endroits" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,"/>
+<org.eventb.core.poSource name="SEQHYS" org.eventb.core.poRole="DEFAULT" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#+"/>
+<org.eventb.core.poSelHint name="SEQHYT" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poSequent#obs1\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
+<org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP|org.eventb.core.poPredicate#PRD1"/>
+</org.eventb.core.poSequent>
+<org.eventb.core.poPredicateSet name="EVTIDENTParafeContexx" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poIdentifier name="personne" org.eventb.core.type="Personnes"/>
+<org.eventb.core.poIdentifier name="pays" org.eventb.core.type="Endroits"/>
+<org.eventb.core.poIdentifier name="pos'" org.eventb.core.type="ℙ(Personnes×Endroits)"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTHYPParafeContexx(" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTIDENTParafeContexx" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="personne∈Personnes" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pays∈Endroits" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#+"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="EVTALLHYPParafeContexx" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#EVTHYPParafeContexx(" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="pos(personne)≠pays" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#,"/>
+<org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="personne ↦ pays∈F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.event#,|org.eventb.core.guard#-"/>
+</org.eventb.core.poPredicateSet>
+<org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/mosos-parafe/ParafeMachine.bpo|org.eventb.core.poFile#ParafeMachine|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="10">
+<org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="pos⊆F" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#*"/>
+<org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="pos∈Personnes → Endroits" org.eventb.core.source="/mosos-parafe/ParafeMachine.bum|org.eventb.core.machineFile#ParafeMachine|org.eventb.core.invariant#+"/>
+</org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

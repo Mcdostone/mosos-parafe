@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+<org.eventb.core.carrierSet name="," org.eventb.core.comment="Pays" org.eventb.core.identifier="Endroits"/>
+<org.eventb.core.carrierSet name="-" org.eventb.core.identifier="Personnes"/>
+<org.eventb.core.constant name="." org.eventb.core.identifier="paysEntrée"/>
+<org.eventb.core.constant name="/" org.eventb.core.identifier="paysSortie"/>
+<org.eventb.core.constant name="1" org.eventb.core.identifier="personne1"/>
+<org.eventb.core.carrierSet name="2" org.eventb.core.identifier="SAS"/>
+<org.eventb.core.constant name="3" org.eventb.core.identifier="personne2"/>
+<org.eventb.core.constant name="4" org.eventb.core.comment="1ère porte ouverte" org.eventb.core.identifier="ouvert1"/>
+<org.eventb.core.constant name="5" org.eventb.core.comment="1ère porte fermée" org.eventb.core.identifier="fermé1"/>
+<org.eventb.core.constant name="6" org.eventb.core.comment="2eme porte ouverte" org.eventb.core.identifier="ouvert2"/>
+<org.eventb.core.constant name="7" org.eventb.core.comment="2eme porte fermée" org.eventb.core.identifier="fermé2"/>
+<org.eventb.core.axiom name="8" org.eventb.core.comment="A voir si nécessaire plus tard&#9;" org.eventb.core.label="axm1" org.eventb.core.predicate="paysEntrée ∈ Endroits"/>
+<org.eventb.core.axiom name="9" org.eventb.core.comment="Idem" org.eventb.core.label="axm2" org.eventb.core.predicate="paysSortie ∈ Endroits"/>
+<org.eventb.core.axiom name=";" org.eventb.core.label="axm4" org.eventb.core.predicate="paysEntrée ≠ paysSortie"/>
+<org.eventb.core.axiom name="=" org.eventb.core.label="axm5" org.eventb.core.predicate="personne1 ∈ Personnes"/>
+<org.eventb.core.axiom name="&gt;" org.eventb.core.label="axm6" org.eventb.core.predicate="personne2 ∈ Personnes"/>
+<org.eventb.core.axiom name="?" org.eventb.core.label="axm7" org.eventb.core.predicate="personne1 ≠ personne2"/>
+<org.eventb.core.axiom name="@" org.eventb.core.comment=" " org.eventb.core.label="axm8" org.eventb.core.predicate="ouvert1 ∈ Endroits → SAS "/>
+<org.eventb.core.axiom name="A" org.eventb.core.label="axm9" org.eventb.core.predicate="fermé1 ∈ Endroits → Endroits"/>
+<org.eventb.core.axiom name="B" org.eventb.core.label="axm10" org.eventb.core.predicate="ouvert2 ∈ SAS → Endroits "/>
+<org.eventb.core.axiom name="C" org.eventb.core.label="axm11" org.eventb.core.predicate="fermé2 ∈ SAS → SAS "/>
+<org.eventb.core.axiom name="D" org.eventb.core.comment="Couples personne,pays" org.eventb.core.label="axm12" org.eventb.core.predicate="F ⊆ Personnes×Endroits"/>
+<org.eventb.core.constant name="E" org.eventb.core.comment="Associe une personne et sa position" org.eventb.core.identifier="F"/>
+<org.eventb.core.constant name="F" org.eventb.core.identifier="posInit"/>
+<org.eventb.core.axiom name="G" org.eventb.core.comment="Fonction qui renvoie la position d'une personne" org.eventb.core.label="axm13" org.eventb.core.predicate="posInit ∈ Personnes → Endroits"/>
+<org.eventb.core.axiom name="H" org.eventb.core.label="axm14" org.eventb.core.predicate="posInit ⊆ F"/>
+<org.eventb.core.axiom name="I" org.eventb.core.label="axm15" org.eventb.core.predicate="∀p· p∈Personnes ⇒ posInit(p)=paysEntrée"/>
+<org.eventb.core.axiom name="K" org.eventb.core.comment="Faire pays- pays directement n'est pas valide" org.eventb.core.label="axm17" org.eventb.core.predicate="∀pays· pays∈Endroits ⇒ pays ↦ pays ∉ chemin"/>
+<org.eventb.core.constant name="L" org.eventb.core.identifier="chemin"/>
+<org.eventb.core.axiom name="M" org.eventb.core.label="axm18" org.eventb.core.predicate="chemin ⊆ Endroits×Endroits"/>
+<org.eventb.core.axiom name="N" org.eventb.core.label="axm19" org.eventb.core.predicate="F ⊆ F;chemin∼"/>
+<org.eventb.core.axiom name="O" org.eventb.core.label="axm20" org.eventb.core.predicate="chemin=ouvert1;ouvert2"/>
+</org.eventb.core.contextFile>
